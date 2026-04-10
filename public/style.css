@@ -1,0 +1,22 @@
+/* Custom styles for glassmorphism and animations */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Timer red animation */
+.timer-red {
+  color: #ef4444;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Question palette status colors */
+.palette-answered { background-color: #10b981; }
+.palette-flagged { background-color: #f59e0b; }
+.palette-current { border: 3px solid #3b82f6; }
