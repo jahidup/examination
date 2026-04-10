@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taking Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+  <div id="test-container" class="container mx-auto p-4">
+    <!-- Header with timer -->
+    <div class="bg-white rounded-xl shadow-md p-4 mb-4 flex justify-between items-center">
+      <h1 id="test-title" class="text-2xl font-bold"></h1>
+      <div id="timer" class="text-2xl font-mono bg-gray-800 text-white px-6 py-2 rounded-full"></div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-4">
+      <!-- Question area -->
+      <div class="lg:w-3/4 bg-white rounded-xl shadow-md p-6">
+        <div id="question-container">
+          <!-- Question will be rendered here -->
+        </div>
+        <div class="flex justify-between mt-6">
+          <button id="prev-btn" class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">Previous</button>
+          <button id="next-btn" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Next</button>
+        </div>
+        <div class="mt-4 flex gap-4">
+          <button id="clear-btn" class="px-4 py-2 border border-gray-400 rounded-lg hover:bg-gray-100">Clear Answer</button>
+          <button id="flag-btn" class="px-4 py-2 border border-yellow-500 text-yellow-600 rounded-lg hover:bg-yellow-50">Flag for Review</button>
+        </div>
+      </div>
+
+      <!-- Question palette -->
+      <div class="lg:w-1/4 bg-white rounded-xl shadow-md p-4">
+        <h3 class="font-semibold mb-2">Question Palette</h3>
+        <div id="palette" class="grid grid-cols-5 gap-2"></div>
+        <button id="submit-test" class="w-full mt-6 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">Submit Test</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="test.js"></script>
+</body>
+</html>
